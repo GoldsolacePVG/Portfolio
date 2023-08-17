@@ -1,0 +1,21 @@
+a:link, a:visited, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.menu{
+    overflow: hidden;
+    position: fixed;
+    top: 10;
+    right: 10;
+    width: 100%;
+}
+
+.menu a{
+    float: right;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid rgb(77, 76, 76);
+    margin: 5px 5px;
+    filter: blur(0);
+}
