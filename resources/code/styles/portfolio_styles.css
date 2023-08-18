@@ -1,21 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Modern;
+    src: url('../../fonts/Kollektif.ttf');
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    background-image: url('../../img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 a:link, a:visited, a:active{
     color: black;
     text-decoration: none;
 }
 
+
 .menu{
     overflow: hidden;
     position: fixed;
-    top: 10;
-    right: 10;
     width: 100%;
+    z-index: 1;
+    background-color: black;
+    padding: 15;
 }
 
 .menu a{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 208, 0);
+    border-radius: 5px;
+    color: rgb(255, 208, 0);
     float: right;
-    padding: 14px 16px;
-    font-size: 17px;
-    border: 1px solid rgb(77, 76, 76);
+    font-family: Modern;
+    font-size: 30px;
     margin: 5px 5px;
-    filter: blur(0);
+    padding: 14px 16px;
+}
+
+.welcome-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main_title{
+    background-color: rgba(177, 177, 177, 0.1);
+    backdrop-filter: blur(15px);
+    border: 3px solid rgb(255, 208, 0);
+    border-radius: 10px;
+    padding: 1;
+    position: relative;
+    font-size: 30px;
+    font-family: Modern;
+    width: 350px;
+    height: auto;
+    color: rgb(255, 208, 0);
+    transform: translate(230%, -230%);
+    text-align: center;
+}
+
+.about_title{
+    position: absolute;
+    left: 46%;
+    margin-top: -50px;
+    font-size: 50px;
+    font-family: Modern;
+}
+
+.about_grid{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 10;
+}
+
+.about_grid > div{
+    font-size: 30px;
+    font-family: Modern;
+    margin: 100px;
+    max-width: 700px;
+}
+
+.about_grid > div > p{
+    font-family: Modern;
+    font-size: 23px;
+    color: black;
+}
+
+.down_cv{
+    background-color: rgb(255, 208, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-left: 30%;
+    float: left;
+}
+
+.down_cv:hover{
+    background-color: rgb(209, 171, 0);
+}
+
+.about_grid > div > img{
+    border: 3px solid black;
 }
