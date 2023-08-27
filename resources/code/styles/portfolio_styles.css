@@ -74,12 +74,20 @@ a:link, a:visited, a:active{
     text-align: center;
 }
 
-.about_title{
+.section_titles{
     position: absolute;
-    left: 46%;
-    margin-top: -50px;
     font-size: 50px;
     font-family: Modern;
+}
+
+.about_title{
+    left: 46%;
+    margin-top: -50px;
+}
+
+.skills_title{
+    left: 48%;
+    margin-top: -50px;
 }
 
 .about_grid{
