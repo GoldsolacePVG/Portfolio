@@ -120,10 +120,32 @@ a:link, a:visited, a:active{
     float: left;
 }
 
+.view_cv{
+    margin-left: 34.5%;
+}
+
 .down_cv:hover{
     background-color: rgb(209, 171, 0);
 }
 
 .about_grid > div > img{
     border: 3px solid black;
+}
+
+.skills_desc > p{
+    font-family: Modern;
+    font-size: 23px;
+    color: black;
+    text-align: center;
+}
+
+.skills_grid{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+div.skills_grid img{
+    width: 100%;
+    height: auto;
 }
