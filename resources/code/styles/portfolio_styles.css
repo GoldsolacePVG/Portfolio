@@ -132,6 +132,11 @@ a:link, a:visited, a:active{
     border: 3px solid black;
 }
 
+.skills_img_container{
+    width: 80%;
+    margin-left: 19%;
+}
+
 .skills_desc > p{
     font-family: Modern;
     font-size: 23px;
@@ -142,10 +147,11 @@ a:link, a:visited, a:active{
 .skills_grid{
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 17.99999%;
+    margin-bottom: 80px;
 }
 
 div.skills_grid img{
-    width: 100%;
-    height: auto;
+    height: 12%;
+    width: auto;
 }
