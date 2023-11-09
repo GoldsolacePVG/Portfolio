@@ -79,6 +79,12 @@ a:link, a:visited, a:active{
     font-family: Modern;
 }
 
+.sub_section_titles{
+    position: absolute;
+    font-size: 30px;
+    font-family: Modern;
+}
+
 .about_title{
     left: 46%;
     margin-top: -50px;
@@ -90,7 +96,12 @@ a:link, a:visited, a:active{
 }
 
 .project_title{
-    left: 46.5%;
+    left: 47%;
+    margin-top: -50px;
+}
+
+.sub_project_title{
+    left: 43%;
     margin-top: -50px;
 }
 
@@ -180,4 +191,32 @@ div.go_img img{
     color: black;
     text-align: center;
     margin-left: 80px;
+}
+
+.project_img_class{
+    width: 40%;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    left: 32%;
+}
+
+.prev, .next{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 15%;
+    margin-top: 15%;
+}
+
+.next{
+    left: 83%;
+}
+
+.tech{
+    position: absolute;
+    width: 400px;
+    left: 44%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
