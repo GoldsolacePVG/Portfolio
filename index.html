@@ -12,6 +12,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <style></style>
     </head>
+    <script src="resources/code/javascript/portfolio_function.js"></script>
     <body>
         <a name="top_page"></a>
         <!-- TOP MENU -->
@@ -154,16 +155,16 @@
         </div>
 
         <img src="resources/img/projects/MH_Web.png" id="project_img" class="project_img_class">
-        <img src="resources/img/left_button.png" id="left_button" class="prev">
-        <img src="resources/img/right_button.png" id="right_button" class="next">
+        <a onclick="SubstractIndex()"><img src="resources/img/left_button.png" id="left_button" class="prev"></a>
+        <a onclick="AddIndex()"><img src="resources/img/right_button.png" id="right_button" class="next"></a>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br>
 
-        <h2 align="center" class="sub_section_titles sub_project_title">Monster Hunter Website</h3>
-        <div class="project_desc">
-            <p id="">This final year project consists in a thematic website of 
+        <h2 align="center" class="sub_section_titles sub_project_title" id="project_title">Monster Hunter Website</h3>
+        <div class="project_desc" id="project_desc">
+            <p>This final year project consists in a thematic website of 
                 the game <i>Monster Hunter</i>, developed by the company Capcom.
                 <br><br> In this website we will find some information of the game, 
                 a part from a <i>contact form</i> & a <i>generic CV</i>.
@@ -171,8 +172,8 @@
         </div>
         <br>
         <h3 align="center" style="font-family: Modern; margin-left: 70px;">Technologies used: </h3>
-        <div class="tech">
-            <img src="https://img.shields.io/badge/-HTML-FF4600?labelColor=2C2C2C&style=for-the-badge&logo=html5&logoColor=white" height="30px">
+        <div class="tech" id="tech_used">
+            <img src="https://img.shields.io/badge/-HTML-FF4600?labelColor=2C2C2C&style=for-the-badge&logo=html5&logoColor=white" height="28px">
             <img src="https://img.shields.io/badge/-CSS-008FFF?labelColor=2C2C2C&style=for-the-badge&logo=css3&logoColor=white">
             <img src="https://img.shields.io/badge/-JavaScript-FFE800?labelColor=2C2C2C&style=for-the-badge&logo=javascript&logoColor=white">
         </div>
@@ -181,4 +182,5 @@
         <!-- CONTACT US SECTION -->
         <!-- <h1 class="section_titles">Contact Us</h1> -->
     </body>
+    <!-- <script src="resources/code/javascript/portfolio_function.js"></script> -->
 </html>

@@ -101,8 +101,9 @@ a:link, a:visited, a:active{
 }
 
 .sub_project_title{
-    left: 43%;
+    left: 45%;
     margin-top: -50px;
+    text-align: center;
 }
 
 .about_grid{
@@ -219,4 +220,8 @@ div.go_img img{
     left: 44%;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.tech img{
+    margin-right: 3px;
 }
