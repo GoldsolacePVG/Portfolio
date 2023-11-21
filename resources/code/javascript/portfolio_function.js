@@ -5,6 +5,7 @@ my_img_list[0] = "resources/img/projects/MH_Web.png";
 my_img_list[1] = "resources/img/projects/Space_Wars.png";
 my_img_list[2] = "resources/img/projects/Godai.png";
 my_img_list[3] = "resources/img/projects/MHPixelLogo.png";
+my_img_list[4] = "resources/img/projects/TheRobotEscape.png";
 
 ChangeImg(img_index);
 
@@ -55,6 +56,17 @@ function ChangeImg(index){
     case 3:
       document.getElementById("project_title").innerHTML = "Monster Hunter Pixel";
       document.getElementById("project_title").style.left = "45%";
+      document.getElementById("project_desc").innerHTML = "<p></p>";
+      document.getElementById("tech_used").style.width = "180px";
+      document.getElementById("tech_used").style.left = "47.3%";
+      document.getElementById("tech_used").innerHTML = "<img src='https://img.shields.io/badge/-Unity-gray?labelColor=2c2c2c&style=for-the-badge&logo=unity'/><img src='https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=101010'/>";
+    break;
+    case 4:
+      document.getElementById("project_title").innerHTML = "The Robot Escape";
+      document.getElementById("project_desc").innerHTML = "<p></p>";
+      document.getElementById("tech_used").style.width = "180px";
+      document.getElementById("tech_used").style.left = "47.3%";
+      document.getElementById("tech_used").innerHTML = "<img src='https://img.shields.io/badge/-Unity-gray?labelColor=2c2c2c&style=for-the-badge&logo=unity'/><img src='https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=101010'/>";
     break;
   }
 }
