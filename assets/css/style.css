@@ -1246,9 +1246,129 @@ width: 50%;
   font-weight: bold;
 }
 
+.portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
 
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  visibility: hidden; /* Initially hide it */
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--surface-color), transparent 10%);
+  padding: 15px;
+}
 
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
 
+.portfolio .portfolio-item .portfolio-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
 
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
 
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
 
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible; /* Make it visible on hover */
+  bottom: 0;
+  z-index: 10; /* Raise z-index on hover */
+}
+
+.img-hover-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  display: flex;                /* Center image horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.img-hover-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s;
+  object-fit: contain;          /* Keep aspect ratio, fit inside container */
+  /* Make image slightly bigger by default */
+  transform: scale(1.05);
+}
+
+.img-hover-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(59, 52, 30, 0.7); /* dark blue overlay */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.img-hover-container:hover .img-hover-overlay,
+.img-hover-container:focus .img-hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.img-hover-container:hover img {
+  transform: scale(1.15);       /* Bigger zoom on hover */
+}
+
+.img-hover-overlay .overlay-content {
+  text-align: center;
+}
+
+.overlay-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.overlay-icons {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if container has height */
+  width: 100%;
+  margin-top: 0.5em;       /* optional: space from title */
+gap: 15px;
+}
+.overlay-icons img {
+  display: block;
+  width: 55px;
+  height: auto;
+}

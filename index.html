@@ -22,9 +22,12 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -45,19 +48,20 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/author.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/newAuthor.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Rodrigo <br> Micó Pliego</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/GoldsolacePVG" class="gihub" target="_blank"><i class="bx bxl-github"></i></a>
-          <!-- <a href="https://es.linkedin.com/in/sebasti%C3%A1n-vald%C3%A9s-s%C3%A1nchez-2b82a8251" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+          <a href="https://www.linkedin.com/in/rodrigo-micó-pliego-372665308/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://goldsolace9995.itch.io" target="_blank" class="itchio"><i class="fab fa-itch-io"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <!--<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
         </ul>
@@ -72,60 +76,27 @@
       <p>I'm a <span class="typed" data-typed-items="Programmer, Designer, Developer, Gamer"></span></p>
     </div>
   </section><!-- End Hero -->
-
+  
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about" style="background-color: #fffef6;">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About Me</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/author.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>VideoGame Programmer.</h3>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 May 2004</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+34) 688 91 38 90</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Valencia, Spain</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>HND in Computing</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>EMail:</strong> <span>rodrigomicopliego@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              I'm Rodrigo, a passionate gameplay and graphics engine programmer. My world revolves around creating immersive gaming experiences that are visually stunning. 
-              From developing engaging gameplay mechanics to optimizing graphics performance, I enjoy every step of the process. 
-              <br><br>
-              This portfolio showcases my dedication and skills as a programmer. Welcome to my world of virtual adventures!
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg" style="background-color: #ffedbc;">
       <div class="container">
-
+  
         <div class="section-title">
           <h2>Portfolio</h2>
           <p style="text-align: center">Here are the most interesting projects and games that I have made.</p>
         </div>
 
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Both</li>
+                <li data-filter=".filter-coder">Programmer</li>
+                <li data-filter=".filter-designer">Designer</li>
+              </ul>
+            </div>
+          </div>
+  
           <div class="row" data-aos="fade-up">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
@@ -141,184 +112,102 @@
               </ul>
             </div>
           </div>
-
+  
           <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Poyo Engine -->
-            <!-- <div class="col-md-4 portfolio-item filter-graphics">
-              <div class="work-box">
-                <a href="portfolio/poyo-engine.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/PoyoEngineOPT.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">🍗 Poyo Engine 🍗
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">My own Graphic Engine</span> / <span class="w-date">Sep. 2022 - Jun. 2023</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C++</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">OpenGL</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">GLSL</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">XBOX</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">DirectX 11</span>
-                      </p>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
+  
             <!-- The Last Sacrifice -->
-            <div class="col-md-4 portfolio-item filter-unreal">
-              <div class="work-box">
-                <a href="portfolio/invicta.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Unknown.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Inside the Crows Nest
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>14</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First Game on Steam</span> / <span class="w-date">September 2024 - June 2025</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C++</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Blueprints</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unreal Engine</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unreal filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Unknown.jpg" class="img-fluid" alt="Inside the Crow's Nest">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Inside the Crow's Nest</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/cplus_logo.png" alt="C++" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/ue_logo.png" alt="Unreal Engine" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- Memento Mori -->
-            <div class="col-md-4 portfolio-item filter-unity">
-              <div class="work-box">
-                <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Unknown.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Memento Mori
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>2</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">Metroidvania game</span> / <span class="w-date">???</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C#</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unity Engine</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unity filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Unknown.jpg" class="img-fluid" alt="SlayersHQ">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Memento Mori</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/csharp_logo.png" alt="C#" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/unity_logo.png" alt="Unity" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Warrior's Path -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-godot filter-coder filter-designer">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Unknown.jpg" class="img-fluid" alt="SlayersHQ">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Warrior's Path</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/gd_script_logo.png" alt="GDScript" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/godot_logo.png" alt="Godot Engine" style="width:55px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
             <!-- World X -->
-            <div class="col-md-4 portfolio-item filter-roblox">
-              <div class="work-box">
-                <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/WorldXLogo.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title"> World X
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>2</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First roblox game.</span> / <span class="w-date">???</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Lua</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Roblox Studio</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-roblox filter-coder filter-designer">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/WorldXLogo.jpg" class="img-fluid" alt="SlayersHQ">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">World X</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/lua_logo.png" alt="Lua" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/roblox_studio_logo.png" alt="Roblox Studio" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- The Echoes of The Dawn -->
-            <div class="col-md-4 portfolio-item filter-godot">
-              <div class="work-box">
-                <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Unknown.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">The Echoes of The Dawn
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First bishojo game</span> / <span class="w-date">???</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">GDScript</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Godot Engine</span>
-                      </p>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+  
+  
             <!-- Arcane Bastion: Endless Horde -->
-            <div class="col-md-4 portfolio-item filter-unreal">
-              <div class="work-box">
-                <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/CursusHonorum.webp" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Arcane Bastion: Endless Horde
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>2</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First "Vampire Survivor"</span> / <span class="w-date">April 2025 - May 2025</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C++</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Blueprints</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unreal Engine</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unreal filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/CursusHonorum.webp" class="img-fluid" alt="Tibis Project">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Arcane Bastion: Endless Horde</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/cplus_logo.png" alt="C++" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/ue_logo.png" alt="Unreal Engine" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- XCode -->
-            <div class="col-md-4 portfolio-item filter-xcode">
+            <!-- <div class="col-md-4 portfolio-item filter-xcode">
               <div class="work-box">
                 <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
                   <div class="work-img">
@@ -343,10 +232,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-
+            </div> -->
+  
             <!-- Apollo Bot -->
-            <div class="col-md-4 portfolio-item filter-others">
+            <!-- <div class="col-md-4 portfolio-item filter-others">
               <div class="work-box">
                 <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
                   <div class="work-img">
@@ -371,39 +260,47 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <!-- GE Companion App -->
-            <div class="col-md-4 portfolio-item filter-android">
-              <div class="work-box">
-                <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/GECompanionApp.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">GE Companion App
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First Android Studio App</span> / <span class="w-date">January 2025 - ???</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Kotlin</span>
-                        <!-- <span class="badge badge-pill text-primary border border-primary ml-1">XML</span> -->
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Android Studio</span>
-                      </p>   
+            </div> -->
+            <!-- Slayer Nexus -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-xcode filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Unknown.jpg" class="img-fluid" alt="God Arc Nexus">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Slayer Nexus</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/kotlin_logo.png" alt="Kotlin" style="width:45px; height:45px;">
+                      <img src="assets/img/icons/swift_logo.png" alt="Swift" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/android_studio_logo.png" alt="Android Studio" style="width:55px;">
+                      <img src="assets/img/icons/xcode_logo.png" alt="XCode" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
+            <!-- GE Companion App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/GECompanionApp.jpg" class="img-fluid" alt="God Arc Nexus">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">God Arc Nexus</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/kotlin_logo.png" alt="Kotlin" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/android_studio_logo.png" alt="Android Studio" style="width:55px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
             <!-- DinoPY -->
-            <div class="col-md-4 portfolio-item filter-others">
+            <!-- <div class="col-md-4 portfolio-item filter-others">
               <div class="work-box">
                 <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
                   <div class="work-img">
@@ -427,181 +324,160 @@
                   </div>
                 </div>
               </div>
-            </div>
-
+            </div> -->
+  
             <!-- Slayers HQ -->
-            <div class="col-md-4 portfolio-item filter-unity">
-              <div class="work-box">
-                <a href="portfolio/robo-space-runner.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/SlayersHQMain.png" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Slayers HQ
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">PS stats simulator</span> / <span class="w-date">September 2024 - January 2025</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C#</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unity Engine</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unity filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/SlayersHQMain.png" class="img-fluid" alt="SlayersHQ">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Slayers HQ</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/csharp_logo.png" alt="C#" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/unity_logo.png" alt="Unity" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- Starfield -->
-            <div class="col-md-4 portfolio-item filter-others">
-              <div class="work-box">
-                <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Starfield.gif" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Starfield
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>2</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">Star Wars effect</span> / <span class="w-date">November 2024 - December 2024</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C</span>
-                        <!-- <span class="badge badge-pill text-primary border border-primary ml-1">Assembler</span> -->
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Raspberry Pi</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Starfield.gif" class="img-fluid" alt="Starfield">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Starfield</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/c_logo.png" alt="C" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/raspberry_pi_logo.png" alt="Raspberry Pi" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- EMF Bot -->
-            <div class="col-md-4 portfolio-item filter-others">
-              <div class="work-box">
-                <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/EMFBotEX.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">EMF Bot
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">Bot for sending emails</span> / <span class="w-date">October 2024</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Python</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Go</span>
-                        <!-- <span class="badge badge-pill text-primary border border-primary ml-1">C#</span> -->
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/EMFBotEX.jpg" class="img-fluid" alt="EMFBot">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">EMF Bot</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/python_logo.png" alt="Python" style="width:55px; height:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- Magic Defense -->
-            <div class="col-md-4 portfolio-item filter-unity">
-              <div class="work-box">
-                <a href="portfolio/robo-space-runner.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/MagicDefense.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Magic Defense
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>3</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First Android Game</span> / <span class="w-date">February 2024 - May 2024</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C#</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unity Engine</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Android Game</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unity filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/MagicDefense.jpg" class="img-fluid" alt="Magic Defense">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Magic Defense</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/csharp_logo.png" alt="C#" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/unity_logo.png" alt="Unity" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
             <!-- Poopy Walk -->
-            <div class="col-md-4 portfolio-item filter-unity">
-              <div class="work-box">
-                <a href="portfolio/space-shock.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/PoopyWalk.gif" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Poopy Walk
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>7</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">Valencia Global Game Jam 2024</span> / <span class="w-date">January 2024 - January 2024</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">C#</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Unity Engine</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unity filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/PoopyWalk.gif" class="img-fluid" alt="Poopy Walk">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Poopy Walk</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/csharp_logo.png" alt="C#" style="width:55px; height:55px;">
+                      <img src="assets/img/icons/unity_logo.png" alt="Unity" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <!-- Web Calculator -->
-            <div class="col-md-4 portfolio-item filter-others">
-              <div class="work-box">
-                <a href="portfolio/standard_calculator.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Calculator.png" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">Standard Calculator
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>2</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First simple web project</span> / <span class="w-date">October 2023 - October 2023</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">HTML</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">CSS</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">JavaScript</span>
-                      </p>   
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/Calculator.png" class="img-fluid" alt="Standard Calculator">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Standard Calculator</div>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/html_logo.png" alt="HTML" style="width:55px;">
+                      <img src="assets/img/icons/css_logo.png" alt="CSS" style="width:55px;">
+                      <img src="assets/img/icons/js_logo.png" alt="JS" style="width:55px;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+  
     </section><!-- End Portfolio Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" style="background-color: #fffef6;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/newAuthor.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>VideoGame Programmer & Designer.</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 May 2004</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+34) 688 91 38 90</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Valencia, Spain</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>HND in Computing & HND in Computer Game Design</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>EMail:</strong> <span>rodrigomicopliego@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I'm Rodrigo, a passionate gameplay and graphics engine programmer. My world revolves around creating immersive gaming experiences that are visually stunning. 
+              From developing engaging gameplay mechanics to optimizing graphics performance, I enjoy every step of the process. 
+              <br><br>
+              This portfolio showcases my dedication and skills as a programmer. Welcome to my world of virtual adventures!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -646,15 +522,6 @@
                          also using Perforce as version control platform.</em></p>
                 </div>
             </div>
-            <!-- <div class="resume-item">
-              <h4>Graphic Programmer</h4>
-              <h5>Sep. 2022 - June 2023 </h5>
-                <div style="padding-left: 20px;">
-                  <p><em><b>🍗 Poyo Engine 🍗</b></em></p>
-                  <p><em>Worked on my first Graphic Engine made from scratch with C++ 
-                         and built it component-oriented using an Entity Component System (ECS).</em></p>
-                </div>
-            </div> -->
           </div>
         </div>
 
