@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900 font-sans">
+  <header class="bg-gradient-to-r from-orange-500 to-yellow-400 p-6 shadow-xl">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center">My Awesome Game</h1>
+  </header>
+
+  <main class="p-4 sm:p-6 space-y-10 max-w-6xl mx-auto">
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">About the Game</h2>
+      <p class="text-base sm:text-lg leading-relaxed">
+        Enter a mystical world of adventure and challenge! Battle foes, solve puzzles, and discover the secrets of the ancient realm.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Screenshots</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="https://source.unsplash.com/random/400x300?game" class="rounded-2xl shadow-lg" alt="Screenshot 1">
+        <img src="https://source.unsplash.com/random/400x301?fantasy" class="rounded-2xl shadow-lg" alt="Screenshot 2">
+        <img src="https://source.unsplash.com/random/400x302?adventure" class="rounded-2xl shadow-lg" alt="Screenshot 3">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">How to Play</h2>
+      <ul class="list-disc list-inside text-base sm:text-lg space-y-1">
+        <li>Use arrow keys or WASD to move</li>
+        <li>Space to jump</li>
+        <li>Collect all keys to open gates</li>
+        <li>Avoid traps and enemies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Play the Game</h2>
+      <a href="#" class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-xl shadow text-center">Download / Play Now</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Credits</h2>
+      <p class="text-base sm:text-lg">Game developed by <span class="font-semibold">Your Name</span>. Contact at: <a href="mailto:you@example.com" class="text-orange-600 underline">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="bg-yellow-100 text-center text-sm py-4 text-gray-700">
+    &copy; 2025 Your Game Studio. All rights reserved.
+  </footer>
+</body>
+</html>
