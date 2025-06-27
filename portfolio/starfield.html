@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starfield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900 font-sans">
+  <header class="bg-gradient-to-r from-orange-500 to-yellow-400 p-6 shadow-xl">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center">Starfield</h1>
+  </header>
+
+  <main class="p-4 sm:p-6 space-y-10 max-w-6xl mx-auto">
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">About the Project</h2>
+      <p class="text-base sm:text-lg leading-relaxed">
+        The Starfield project is a visual simulation inspired by a moving starfield. Its functionality is based on the random generation of multiple points in 
+        space, representing stars moving toward the viewer.<br> Each point is assigned a random speed at the start of the program, which creates a sense of 
+        depth as some stars appear to move faster than others. This effect helps simulate a three-dimensional motion, similar to what one might experience when 
+        traveling through space at high speed.<br> When a point passes the viewer's perspective, meaning it crosses the foreground of the screen, it doesn't 
+        disappear. Instead, it is repositioned to the background, allowing it to move forward again in a continuous loop. This maintains a constant star density 
+        and reinforces the feeling of an infinite and dynamic universe.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Demonstrative GIF</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="../assets/img/portfolio/Starfield.gif" class="rounded-2xl shadow-lg" alt="Screenshot 1">
+      </div>
+    </section>
+
+    <!-- <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Discover the result</h2>
+      <a href="https://goldsolacepvg.github.io/index.html" target="_blank" title="Monster Hunter Web" class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-xl shadow text-center">Visit the Monster Hunter Web</a>
+    </section> -->
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Credits</h2>
+      <p class="text-base sm:text-lg">Project developed by <span class="font-semibold">Pablo Huertas García & Rodrigo Micó Pliego</span>.</p>
+    </section>
+  </main>
+
+  <!-- <footer class="bg-yellow-100 text-center text-sm py-4 text-gray-700">
+    &copy; 2025 Your Game Studio. All rights reserved.
+  </footer> -->
+</body>
+</html>

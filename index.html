@@ -14,7 +14,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +30,39 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <style>
+    button {
+      position: relative;
+      padding: 12px 24px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #fb923c, #f43f5e, #facc15);
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+    button span {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 1.125rem;
+      color: white;
+      backdrop-filter: blur(4px);
+      transition: background-color 0.3s ease;
+    }
+    button:hover span {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+    }
+  </style>
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -56,7 +89,11 @@
           <a href="https://github.com/GoldsolacePVG" class="gihub" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="https://www.linkedin.com/in/rodrigo-micó-pliego-372665308/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://goldsolace9995.itch.io" target="_blank" class="itchio"><i class="fab fa-itch-io"></i></a>
-          <a href="https://bsky.app/profile/goldsolace9995.bsky.social" target="_blank" class="bluesky">🌐</a>
+          <a href="https://bsky.app/profile/goldsolace9995.bsky.social" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16">
+              <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -77,6 +114,11 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Rodrigo Micó Pliego</h1>
       <p>I'm a <span class="typed" data-typed-items="Programmer, Designer, Developer, Gamer"></span></p>
+      <a href="files/Rodrigo CV.pdf" download="RodrigoMicoPliegoCV.pdf">
+        <button>
+          <span>Download CV 📄</span>
+        </button>
+      </a>
     </div>
   </section><!-- End Hero -->
   
@@ -126,6 +168,9 @@
                 <div class="img-hover-overlay">
                   <div class="overlay-content">
                     <div class="overlay-title">Inside the Crow's Nest</div>
+                    <br>
+                    <a href="portfolio/insideTheCrowsNest.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <br>
                     <br>
                     <div class="overlay-icons">
                       <img src="assets/img/icons/cplus_logo.png" alt="C++" style="width:55px; height:55px;">
@@ -195,10 +240,13 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unreal filter-coder">
               <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
                   data-bs-toggle="modal" data-bs-target="#">
-                <img src="assets/img/portfolio/Unknown.jpg" class="img-fluid" alt="Tibis Project">
+                <img src="assets/img/portfolio/ArcaneBastion.gif" class="img-fluid" alt="Tibis Project">
                 <div class="img-hover-overlay">
                   <div class="overlay-content">
                     <div class="overlay-title">Arcane Bastion: Endless Horde</div>
+                    <br>
+                    <a href="portfolio/arcaneBastion.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <br>
                     <br>
                     <div class="overlay-icons">
                       <img src="assets/img/icons/cplus_logo.png" alt="C++" style="width:55px; height:55px;">
@@ -208,34 +256,6 @@
                 </div>
               </div>
             </div>
-  
-            <!-- XCode -->
-            <!-- <div class="col-md-4 portfolio-item filter-xcode">
-              <div class="work-box">
-                <a href="portfolio/radial-sinewave.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/XCode.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">XCode Project
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First app for iOS</span> / <span class="w-date">??? 2025 - ??? 2025</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Swift</span>
-                        <span class="badge badge-pill text-primary border border-primary ml-1">XCode</span>
-                      </p>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
   
             <!-- Apollo Bot -->
             <!-- <div class="col-md-4 portfolio-item filter-others">
@@ -293,7 +313,7 @@
                   <div class="overlay-content">
                     <div class="overlay-title">God Arc Nexus</div>
                     <br>
-                    <a href="" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <a href="portfolio/godArcNexus.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
                     <br>
                     <br>
                     <div class="overlay-icons">
@@ -306,14 +326,15 @@
             </div>
 
             <!-- Julia Fractal -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
               <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#">
-                <a href="portfolio/poopy-walk.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <img src="assets/img/portfolio/Starfield.gif" class="img-fluid" alt="Starfield">
-                </a>
+                <img src="assets/img/portfolio/Starfield.gif" class="img-fluid" alt="Starfield">
                 <div class="img-hover-overlay">
                   <div class="overlay-content">
                     <div class="overlay-title">Julia Fractal</div>
+                    <br>
+                    <a href="portfolio/juliaFractal.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <br>
                     <br>
                     <div class="overlay-icons">
                       <img src="assets/img/icons/c_logo.png" alt="C" style="width:55px; height:55px;">
@@ -322,35 +343,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-  
-            <!-- DinoPY -->
-            <!-- <div class="col-md-4 portfolio-item filter-others">
-              <div class="work-box">
-                <a href="portfolio/metroid-prime.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                  <div class="work-img">
-                    <img src="assets/img/portfolio/Unknown.jpg" alt="" class="img-fluid">
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div>
-                      <h2 class="w-title">DinoPY
-                        <span class="bx bx-user badge badge-pill text-primary border border"><b>1</b></span> 
-                      </h2>              
-                      <div class="w-more">
-                        <span class="w-ctegory">First try for chat bot</span> / <span class="w-date">???</span>
-                        <br><br>
-                      </div>
-                      <p id="parkour-extreme-tools" class="card-text">
-                        <span class="badge badge-pill text-primary border border-primary ml-1">Python</span>
-                      </p>   
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div> -->
-  
+    
             <!-- Slayers HQ -->
             <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unity filter-coder">
               <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
@@ -377,6 +371,9 @@
                 <div class="img-hover-overlay">
                   <div class="overlay-content">
                     <div class="overlay-title">Starfield</div>
+                    <br>
+                    <a href="portfolio/starfield.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <br>
                     <br>
                     <div class="overlay-icons">
                       <img src="assets/img/icons/c_logo.png" alt="C" style="width:55px; height:55px;">
@@ -472,7 +469,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
               <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
                   data-bs-toggle="modal" data-bs-target="#">
-                <img src="assets/img/portfolio/AsteroidsIcon.jpg" class="img-fluid" alt="Standard Calculator">
+                <img src="assets/img/portfolio/AsteroidsIcon.gif" class="img-fluid" alt="Standard Calculator">
                 <div class="img-hover-overlay">
                   <div class="overlay-content">
                     <div class="overlay-title">Asteroids</div>
@@ -509,6 +506,26 @@
                 </div>
               </div>
             </div>
+
+            <!-- Jetpac Spectrum -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others filter-coder">
+              <div class="img-hover-container" style="position:relative; overflow:hidden; border-radius:8px; cursor:pointer;"
+                  data-bs-toggle="modal" data-bs-target="#">
+                <img src="assets/img/portfolio/JetpacSpectrum.gif" class="img-fluid" alt="Standard Calculator">
+                <div class="img-hover-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-title">Jetpac Spectrum</div>
+                    <br>
+                    <a href="portfolio/jetpacESAT.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bi bi-link-45deg" style="font-size: 40px; color: white;"></i></a>
+                    <br>
+                    <br>
+                    <div class="overlay-icons">
+                      <img src="assets/img/icons/cplus_logo.png" alt="C++" style="width:55px; height:55px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
   
     </section><!-- End Portfolio Section -->
 
@@ -525,7 +542,7 @@
             <img src="assets/img/newAuthor.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>VideoGame Programmer & Designer.</h3>
+            <h3>VideoGame Programmer.</h3>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
@@ -537,7 +554,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>HND in Computing & HND in Computer Game Design</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>HND in Computing <!-- & HND in Computer Game Design --></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>EMail:</strong> <span>rodrigomicopliego@gmail.com</span></li>
                 </ul>
               </div>
