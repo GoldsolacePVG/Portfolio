@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMF Bot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900 font-sans">
+  <header class="bg-gradient-to-r from-orange-500 to-yellow-400 p-6 shadow-xl">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center">EMF Bot</h1>
+  </header>
+
+  <main class="p-4 sm:p-6 space-y-10 max-w-6xl mx-auto">
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">About the App</h2>
+      <p class="text-base sm:text-lg leading-relaxed">
+        EMF Bot is a desktop application developed in Python for Windows, designed to automate the sending of emails, either individually or in 
+        a loop with a time interval defined by the user. It's a useful tool for testing purposes, controlled bulk sending, or automated notifications 
+        in personal or development environments.<br><br> The application uses Python's standard "smtplib" library, which enables connections to mail 
+        servers via the SMTP, also known as "Simple Mail Transfer Protocol", ensuring the structured delivery of messages from configured accounts. For its graphical 
+        interface, EMF Bot relies on "tkinter", Python's native library for building simple and functional user interfaces, allowing users to input recipient 
+        addresses, subject lines, message content, sending frequency, and other basic settings.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Screenshots</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="../assets/img/portfolio/EMFBot/EMF_1.png" class="rounded-2xl shadow-lg" alt="Screenshot 1">
+        <img src="../assets/img/portfolio/EMFBot/EMF_2.png" class="rounded-2xl shadow-lg" alt="Screenshot 2">
+        <img src="../assets/img/portfolio/EMFBot/EMF_3.png" class="rounded-2xl shadow-lg" alt="Screenshot 3">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Key Features</h2>
+      <ul class="list-disc list-inside text-base sm:text-lg space-y-1">
+        <li>Visually appealing UI.</li>
+        <li>"smtplib" implementation.</li>
+        <li>"tkinter" implementation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Discover the result</h2>
+      <a href="../files/EMFBot.zip" download="EMFBotApp.zip" class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-xl shadow text-center">Download app</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Credits</h2>
+      <p class="text-base sm:text-lg">App developed by <span class="font-semibold">Rodrigo Micó Pliego</span>.</p>
+    </section>
+  </main>
+
+  <!-- <footer class="bg-yellow-100 text-center text-sm py-4 text-gray-700">
+    &copy; 2025 Your Game Studio. All rights reserved.
+  </footer> -->
+</body>
+</html>
